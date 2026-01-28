@@ -120,3 +120,38 @@ body {
     color: white;
     font-size: 0.9rem;
 }
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-section h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.about-text p {
+    margin-bottom: 1.2rem;
+}
+
+.about-details {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.detail-card {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
