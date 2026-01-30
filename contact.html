@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Gaurika Bhatt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Gaurika</div>
+        <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <h1>Contact Me</h1>
+
+    <p class="contact-intro">
+        Feel free to reach out for opportunities, collaborations, or any queries.
+    </p>
+
+    <div class="contact-grid">
+        <div class="contact-card">
+            <h3>Email</h3>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRpddJdTCZQPccLBrDKWGLHNpHkfLlCDpzpCfwLgKbVsPfcTQCJXLXTklfWWMMQjLGKMdsL">
+                gaurikabhatt27@gmail.com
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/Gaurikabhatt27" target="_blank">
+                github.com/Gaurikabhatt27
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/gaurika-bhatt-869600283/" target="_blank">
+                linkedin.com/GaurikaBhatt
+            </a>
+        </div>
+    </div>
+
+    <form class="contact-form">
+        <h2>Send a Message</h2>
+
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer class="footer">
+    © 2026 Gaurika Bhatt | Portfolio
+</footer>
+        <script>
+            document.querySelector(".contact-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+                alert("Thank you! Your message has been sent.");
+                this.reset();
+        });
+    </script>
+
+</body>
+</html>
