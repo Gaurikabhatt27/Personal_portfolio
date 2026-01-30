@@ -1,4 +1,4 @@
-/* ===== CSS VARIABLES ===== */
+/*   CSS VARIABLES   */
 :root {
     --primary: #2563eb;
     --secondary: #0f172a;
@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-/* ===== NAVBAR ===== */
+/*   NAVBAR   */
 .navbar {
     position: sticky;
     top: 0;
@@ -67,7 +67,7 @@ body {
     width: 100%;
 }
 
-/* ===== HERO SECTION ===== */
+/*   HERO SECTION   */
 .hero {
     height: 90vh;
     display: flex;
@@ -112,7 +112,7 @@ body {
     box-shadow: 0 10px 20px rgba(37,99,235,0.3);
 }
 
-/* ===== FOOTER ===== */
+/*   FOOTER   */
 .footer {
     text-align: center;
     padding: 1rem;
@@ -121,11 +121,12 @@ body {
     font-size: 0.9rem;
 }
 
-/* ===== ABOUT SECTION ===== */
+/*   ABOUT SECTION   */
+
 .about-section {
-    padding: 4rem 2rem;
     max-width: 1100px;
     margin: auto;
+    padding: 60px 20px;
 }
 
 .about-section h1 {
@@ -134,24 +135,135 @@ body {
     color: var(--secondary);
 }
 
+/*   GRID LAYOUT   */
+
 .about-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 35px;
+    align-items: start;
 }
 
 .about-text p {
-    margin-bottom: 1.2rem;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: var(--secondary);
 }
 
 .about-details {
-    display: grid;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .detail-card {
-    padding: 1.5rem;
+    padding: 18px 20px;
+    border-radius: 14px;
     background-color: white;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.detail-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.detail-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--secondary);
+}
+
+/*   SKILLS SECTION   */
+
+.skills-block {
+    margin-bottom: 1rem;
+}
+
+.skills-block h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    color: var(--secondary);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tags span {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-tags span:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.skill-group p{
+    padding-left: 30px;
+}
+
+/*   CERTIFICATIONS   */
+
+#title-cert{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.cert-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cert-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 24px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.cert-card {
+    text-decoration: none;
+    color: var(--secondary);
+    background: white;
+    padding: 12px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card img {
+    width: 100%;
+    height: 150px;            
+    object-fit: fit;      
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    background-color: #f8f9fa;
+}
+
+.cert-card p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
 }
